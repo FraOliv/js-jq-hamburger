@@ -1,4 +1,4 @@
-  //PRIMO METODO. Utilizzo la classe presente nel css
+/*   //Metodo 1: Utilizzo la classe presente nel css
   //al click sull'icona del menu-hamburger si vede il menu
  $(".header-right > a").click(
    function() {
@@ -11,23 +11,21 @@
    function() {
      $(".hamburger-menu").removeClass("active");
    }
+ */
+  
+  
+  // Metodo 2: Utilizzo .show e .hide
+  // // al click sull'icona del menu-hamburger si vede il menu
+ $(".header-right > a").click(
+   function() {
+     $(".hamburger-menu").show();
+   }
  );
 
-
-  
-  
-  // Secondo Metodo. Utilizzo .show e .hide
-  // // al click sull'icona del menu-hamburger si vede il menu
-  // $(".header-right > a").click(
-  //   function() {
-  //     $(".hamburger-menu").show(500);
-  //   }
-  // );
-  //
-  // // al click sulla X scompare il menu
-  // $(".close").click(
-  //   function() {
-  //     $(".hamburger-menu").hide(500);
-  //   }
-  // );
+ // al click sulla X scompare il menu
+ $(".close").click(
+   function() {
+     $(".hamburger-menu").hide();
+   }
+ );
   
